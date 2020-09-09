@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.10.1/libexec/bin/yarn.js add jquery
+
+PATH: 
+  /Users/mac/Documents/desarrollo/flutter/flutter_macos/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mac/Documents/desarrollo/flutter/flutter_macos/bin:/opt/local/bin:/opt/local/sbin:/Users/mac/Library/Android/sdk/platform:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react: tunneling socket could not be established, statusCode=407
+      at ClientRequest.onConnect (/usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:132507:19)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at Socket.socketOnData (_http_client.js:475:11)
+      at Socket.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+      at readableAddChunk (_stream_readable.js:264:11)
+      at Socket.Readable.push (_stream_readable.js:219:10)
+      at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+
+npm manifest: 
+  {
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-scripts": "1.0.17"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    },
+    "proxy": "http://localhost:5000"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
